@@ -3,8 +3,13 @@ class User {
     private String name;
     private String membership = "Bronze";
 
+    // Method overriding
+    public String toString() {
+        return get_name() + " " + get_membership();
+    }
+
     public User() {
-        
+
     }
 
     public User(String name, String membership) {
@@ -14,7 +19,6 @@ class User {
 
     // Setter
     void set_name(String name) {
-        System.out.println("Logging to log file...");
         this.name = name;
     }
 
