@@ -11,6 +11,10 @@ class User {
     public User() {
 
     }
+    // Generic List
+    public User(String name) {
+        set_name(name);
+    }
 
     public User(String name, String membership) {
         set_name(name);
