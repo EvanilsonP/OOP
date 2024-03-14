@@ -1,8 +1,13 @@
+import java.util.List;
+
 class User {
 
     private String name;
     private String membership = "Bronze";
 
+    // Static data members
+    public static List<User> admins;
+    
     // Method overriding
     public String toString() {
         return get_name() + " " + get_membership();
