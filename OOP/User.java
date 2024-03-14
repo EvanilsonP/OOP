@@ -5,6 +5,13 @@ class User {
     private String name;
     private String membership = "Bronze";
 
+    // Static methods
+    public static void print_name_admins() {
+        for(User user : User.admins) {
+            System.out.println(user);
+        }
+    }
+
     // Static data members
     public static List<User> admins;
     
