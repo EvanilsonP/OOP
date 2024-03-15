@@ -5,6 +5,16 @@ class User {
     private String name;
     private String membership = "Bronze";
 
+    private boolean verified = false;
+
+    void set_verified(boolean verified) {
+        this.verified = verified;
+    }
+
+    boolean get_verified() {
+        return verified;
+    }
+
     // Static methods
     public static void print_name_admins() {
         for(User user : User.admins) {

@@ -3,7 +3,11 @@ import java.util.ArrayList;
 public class OOP {
     public static void main(String[] args) {
         Student student = new Student();
+        student.set_name("Student");
+        Teacher teacher = new Teacher();
+        teacher.set_name("teacher");
         student.set_membership("Gold");
+        System.out.println(teacher.get_membership());
         System.out.println(student.get_membership());
 
         System.out.println(student.get_verified());
@@ -12,6 +16,8 @@ public class OOP {
         User u = new User();
 
         User.admins = new ArrayList<User>();
+        User.admins.add(student);
+        User.admins.add(teacher);
 
         User.admins.add(new User("Caleb"));
         User.admins.add(new User("Maria"));
