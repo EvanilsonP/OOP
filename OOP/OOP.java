@@ -2,6 +2,12 @@ import java.util.ArrayList;
 
 public class OOP {
     public static void main(String[] args) {
+        Student student = new Student();
+        student.set_membership("Gold");
+        System.out.println(student.get_membership());
+
+        System.out.println(student.get_verified());
+
         // User u = new User("Caleb", "Silver");
         User u = new User();
 
